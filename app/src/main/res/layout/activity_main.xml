@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="50sp"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:text="Pitch"
+                    android:textSize="30sp"></TextView>
+
+                <TextView
+                    android:id="@+id/pitch_textview"
+                    android:fontFamily="monospace"
+                    android:gravity="right"
+                    android:text="0°"
+                    android:textSize="30sp"></TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="Roll"
+                    android:textSize="30sp"></TextView>
+
+                <TextView
+                    android:id="@+id/roll_textview"
+                    android:fontFamily="monospace"
+                    android:gravity="right"
+                    android:text="0°"
+                    android:textSize="30sp"></TextView>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/code_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:text="CODE"
+            android:textSize="60sp"></TextView>
+
+    </LinearLayout>
+</layout>
